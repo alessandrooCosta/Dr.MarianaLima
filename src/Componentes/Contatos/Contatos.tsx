@@ -20,7 +20,7 @@ function Contatos() {
                     </div>
                     <div className="cards">
                         <a href="https://wa.me/5561999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta" target="_blank">
-                            <img src="..\..\..\public\imagens\icones\whatsapp.svg" alt="Mensagem" />
+                            <img src="\imagens\icones\whatsapp.svg" alt="Mensagem" />
                             <p>Whatssap</p>
                         </a>
                     </div>
