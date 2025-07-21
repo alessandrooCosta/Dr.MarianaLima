@@ -1,0 +1,19 @@
+footer {
+  background-color: #424E50;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #F9E9E0;
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 0px;
+  font-size: 30px;
+  z-index: 999;
+  
+}

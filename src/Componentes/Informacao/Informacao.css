@@ -1,0 +1,44 @@
+/* SOBRE - imagem à esquerda e texto à direita */
+.informacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+  background-color: #F9E9E0;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 220px;
+  border-radius: 100%;
+  box-shadow: 0 4px 10px #B8CDBA;
+  
+}
+
+.informacao-texto {
+  max-width: 500px;
+}
+
+.informacao-texto h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #424E50;
+}
+
+.informacao-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #424E50;
+}
+
+.informacao-texto .social {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #F8BBBC;
+}
+
+.informacao-texto .social a {
+  color: #F8BBBC;
+  margin-right: 10px;
+}

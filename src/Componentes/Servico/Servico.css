@@ -1,0 +1,30 @@
+.servicos {
+  padding: 50px 20px;
+  background-color: #B8CDBA;
+  text-align: center;
+}
+
+.servicos h2 {
+  margin-bottom: 30px;
+  color: #424E50;
+}
+
+.card-servico {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #F8BBCE;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #B8CDBA(0,0,0,0.05);
+  width: 200px;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
