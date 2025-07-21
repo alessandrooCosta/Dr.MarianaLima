@@ -9,7 +9,7 @@ function SobreInfo() {
         <div className="perfil">
           <img
             className="foto-perfil"
-            src="..\..\..\public\imagens\fotos\sobre.jpg"
+            src="\imagens\fotos\sobre.jpg"
             alt="Foto da Dra. com pet"
           />
           <h2>Dra. Mariana Lima</h2>
