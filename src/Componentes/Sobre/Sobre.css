@@ -67,3 +67,70 @@
 .icones-social a:hover {
   color: var(--cor-destaque);
 }
+
+@media (max-width: 480px) {
+  .sobre-container {
+    padding: 30px 15px;
+  }
+
+  .sobre-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .perfil {
+    padding: 20px 15px;
+  }
+
+  .foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-width: 4px;
+    margin-bottom: 15px;
+  }
+
+  .perfil h2 {
+    font-size: 1.4rem;
+  }
+
+  .descricao {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .icones-social a {
+    font-size: 1.3rem;
+    gap: 15px;
+  }
+}
+
+/* Para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .sobre-container {
+    padding: 35px 20px;
+  }
+
+  .sobre-container h1 {
+    font-size: 2rem;
+  }
+
+  .foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-width: 4.5px;
+  }
+
+  .perfil h2 {
+    font-size: 1.6rem;
+  }
+
+  .descricao {
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .icones-social a {
+    font-size: 1.4rem;
+    gap: 20px;
+  }
+}

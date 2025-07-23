@@ -1,9 +1,9 @@
-import Servico from "../Componentes/Servico/Servico"
+import PaginaServicos from "../Componentes/PaginaServicos/PaginaServicos";
 
 function Servicos() {
     return (
         <div>
-            <Servico />
+            <PaginaServicos />
         </div>
     )
 }

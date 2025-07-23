@@ -57,3 +57,62 @@
 .btn-whatsapp:hover {
   background-color: #57b57e;
 }
+
+@media (max-width: 1024px) {
+  .hero-texto h1 {
+    font-size: 2rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.1rem;
+  }
+
+  .hero-imagem img {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero-texto, .hero-imagem {
+    width: 100%;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-texto p {
+    font-size: 1rem;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-texto p {
+    font-size: 0.95rem;
+  }
+
+  .hero-imagem img {
+    max-width: 300px;
+  }
+}

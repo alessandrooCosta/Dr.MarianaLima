@@ -1,0 +1,74 @@
+.servicos {
+  padding: 50px 20px;
+  background-color: #B8CDBA;
+  text-align: center;
+}
+
+.servicos h2 {
+  margin-bottom: 30px;
+  color: #424E50;
+}
+
+.card-servico {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #F8BBCE;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #B8CDBA(0,0,0,0.05);
+  width: 200px;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .servicos {
+    padding: 30px 10px;
+  }
+
+  .servicos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100%; /* Cards ocupam toda a largura */
+    max-width: 300px; /* Limitando para não ficar muito grande */
+    margin: 0 auto 20px; /* Centralizar e espaçar entre cards */
+    padding: 20px 15px;
+  }
+
+  .card i {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .servicos {
+    padding: 40px 15px;
+  }
+
+  .servicos h2 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    width: 45%; /* Dois cards por linha */
+    max-width: none;
+  }
+
+  .card i {
+    font-size: 1.9rem;
+  }
+}

@@ -17,3 +17,30 @@ footer {
   z-index: 999;
   
 }
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 10px;
+  }
+
+  .whatsapp-float {
+    font-size: 24px; /* reduz o tamanho do botão */
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Em telas médias (ex: tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  footer {
+    font-size: 0.85rem;
+    padding: 18px 15px;
+  }
+
+  .whatsapp-float {
+    font-size: 28px;
+    bottom: 18px;
+    right: 18px;
+  }
+}

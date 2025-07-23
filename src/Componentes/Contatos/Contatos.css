@@ -54,3 +54,57 @@
   font-size: 1rem;
   margin: 0;
 }
+
+@media (max-width: 1024px) {
+  .contato h1 {
+    font-size: 2rem;
+  }
+
+  .contato-container {
+    padding: 30px 30px;
+  }
+
+  .cards {
+    width: 180px;
+    padding: 25px 15px;
+  }
+
+  .contato-opcoes {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contato h1 {
+    font-size: 1.8rem;
+  }
+
+  .contato-container {
+    padding: 25px 20px;
+  }
+
+  .contato-opcoes {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .cards {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contato h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards img {
+    width: 40px;
+  }
+
+  .cards p {
+    font-size: 0.95rem;
+  }
+}

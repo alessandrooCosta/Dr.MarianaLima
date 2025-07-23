@@ -1,0 +1,191 @@
+ :root {
+      --cor-fundo: #F9E9E0;
+      --cor-texto: #424E50;
+      --cor-destaque: #F8BBCF;
+      --cor-card: #F8BBCF;
+    }
+
+    .servicoss{
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .servicoss h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .servicoss > p {
+      margin-bottom: 40px;
+    }
+
+    .grid-servicos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: center;
+    }
+
+    .cards {
+      background-color: var(--cor-card);
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .cards:hover {
+      transform: translateY(-5px);
+    }
+
+    .cards img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .cards h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .botao-whats {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: var(--cor-destaque);
+      color: var(--cor-texto);
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .motivos {
+  background-color: #F9E9E0; /* tom suave da paleta */
+  padding: 40px 20px;
+  text-align: center;
+  color: #424E50;
+}
+
+.motivos h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #424E50;
+}
+
+.motivos ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.motivos li {
+  background-color: #B8CDBA; /* destaque sutil */
+  color: #424E50;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.motivos li:hover {
+  transform: translateY(-3px);
+  background-color: #F8BBCF;
+}
+
+
+.botao-whats:hover {
+      background-color: var(--cor-card);
+}
+
+@media (max-width: 1024px) {
+  .servicoss h1 {
+    font-size: 2rem;
+  }
+
+  .grid-servicos {
+    gap: 60px;
+  }
+
+  .cards {
+    width: 220px;
+    padding: 18px;
+  }
+
+  .motivos h2 {
+    font-size: 1.8rem;
+  }
+
+  .motivos li {
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicoss {
+    padding: 30px 15px;
+  }
+
+  .servicoss h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .grid-servicos {
+    gap: 30px;
+  }
+
+  .motivos ul {
+    padding: 0 10px;
+  }
+
+  .motivos li {
+    font-size: 1rem;
+  }
+
+  .botao-whats {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicoss h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cards h2 {
+    font-size: 1.1rem;
+  }
+
+  .botao-whats {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .motivos h2 {
+    font-size: 1.5rem;
+  }
+
+  .motivos li {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}
