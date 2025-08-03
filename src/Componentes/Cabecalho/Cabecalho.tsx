@@ -6,7 +6,7 @@ function Cabecalho() {
   return (
     <header>
       <Link to="/">
-        <div className="logo"><img src="\imagens\fotos\logo2.jpg" alt="Logo" /></div>
+        <div className="logo"><img src="\imagens\fotos\logo_cabecalho.jpg" alt="Logo" /></div>
       </Link>
       <nav>
         <Link to="/sobre"><a>Sobre</a></Link>

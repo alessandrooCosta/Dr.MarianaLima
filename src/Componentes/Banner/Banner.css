@@ -43,6 +43,17 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-hero {
+  width: 380px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .btn-whatsapp {
   background-color: #B8CDBA;
   color: #fff;
@@ -114,5 +125,12 @@
 
   .hero-imagem img {
     max-width: 300px;
+  }
+}
+
+/* Responsividade para logo */
+@media (max-width: 768px) {
+  .logo-hero {
+    width: 100px;
   }
 }
