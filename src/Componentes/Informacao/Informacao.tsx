@@ -3,10 +3,10 @@ import './Informacao.css'
 function Informacao() {
     return (
         <section className="informacao">
-            <img className="img" src="\imagens\fotos\banner2.jpg" alt="Foto da Dra. Mariana Lima" />
+            <img className="img" src="\imagens\fotos\img_info.jpg" alt="Foto da Dra. Mariana Lima" />
             <div className="informacao-texto">
                 <h2>Dra. Mariana Lima, CRMV 5142-DF</h2>
-                <p>Atua na clínica médica de pequenos animais, com foco em cuidado, bem-estar e atenção individualizada.</p>
+                <p>Atua há mais de 4 anos na clínica médica de pequenos animais, com foco em cuidado, bem-estar e atenção individualizada.</p>
                 <div className="social">
                     <a href="https://www.instagram.com/mbr.vet/" target="_blank"><img src="\imagens\icones\instagram.svg"></img></a>
                     <a href="https://facebook.com" target="_blank"><img src="\imagens\icones\facebook.svg"></img></a>

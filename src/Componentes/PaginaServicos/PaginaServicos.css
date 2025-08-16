@@ -1,79 +1,130 @@
- :root {
-      --cor-fundo: #F9E9E0;
-      --cor-texto: #424E50;
-      --cor-destaque: #F8BBCF;
-      --cor-card: #F8BBCF;
-    }
+:root {
+  --cor-rosa: #F8BBC3;
+  --cor-texto: #424E50;
+  --cor-fundo: #F9E9E0;
+  --cor-verde: #B8CDBA;
+}
 
-    .servicoss{
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .servicoss h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .servicoss > p {
-      margin-bottom: 40px;
-    }
-
-    .grid-servicos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 100px;
-      justify-content: center;
-    }
-
-    .cards {
-      background-color: var(--cor-card);
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-
-    .cards:hover {
-      transform: translateY(-5px);
-    }
-
-    .cards img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-
-    .cards h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .botao-whats {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 24px;
-      background-color: var(--cor-destaque);
-      color: var(--cor-texto);
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .motivos {
-  background-color: #F9E9E0; /* tom suave da paleta */
-  padding: 40px 20px;
+.servicoss {
+  padding: 60px 20px;
   text-align: center;
-  color: #424E50;
+  background-color: white;
+}
+
+.servicoss h1 {
+  font-size: 2.8rem;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.servicoss h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--cor-verde);
+  border-radius: 2px;
+}
+
+.servicoss > p {
+  font-size: 1.3rem;
+  color: var(--cor-texto);
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid corrigido com espaçamento vertical */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px; /* 40px vertical, 30px horizontal */
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.cards {
+  background: #F8BBC3;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(66, 78, 80, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-top: 4px solid var(--cor-rosa);
+  min-height: 300px; /* Altura mínima para uniformidade */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.cards:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(248, 187, 195, 0.3);
+}
+
+.cards img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1));
+  transition: transform 0.3s;
+}
+
+.cards:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.cards h2 {
+  font-size: 1.4rem;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+}
+
+.cards p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  margin-bottom: 0;
+}
+
+
+.motivos {
+  background: linear-gradient(135deg, #F8BBC3 0%, #F9E9E0 100%);
+  padding: 60px 20px;
+  margin: 80px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(248, 187, 195, 0.2);
+}
+
+.motivos::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
 }
 
 .motivos h2 {
-  font-size: 2rem;
-  margin-bottom: 24px;
+  font-size: 2.2rem;
   color: #424E50;
+  text-shadow: 0 2px 4px rgba(66, 78, 80, 0.2);
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .motivos ul {
@@ -84,108 +135,79 @@
 }
 
 .motivos li {
-  background-color: #B8CDBA; /* destaque sutil */
-  color: #424E50;
-  padding: 15px 20px;
-  margin: 10px 0;
-  border-radius: 8px;
+  background: var(--cor-verde);
+  color: var(--cor-texto);
+  padding: 18px 25px;
+  margin: 15px 0;
+  border-radius: 50px;
   font-size: 1.1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(66, 78, 80, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.motivos li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  
 }
 
 .motivos li:hover {
-  transform: translateY(-3px);
-  background-color: #F8BBCF;
+  transform: translateX(10px);
+  background: white;
 }
 
+.botao-whats {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #B8CDBA;
+  color: white;
+  padding: 18px 35px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(184, 205, 186, 0.4);
+  transition: all 0.3s;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
 
 .botao-whats:hover {
-      background-color: var(--cor-card);
+  background-color: #57b57e;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(184, 205, 186, 0.6);
 }
 
+/* Responsivo ajustado */
 @media (max-width: 1024px) {
-  .servicoss h1 {
-    font-size: 2rem;
-  }
-
   .grid-servicos {
-    gap: 60px;
-  }
-
-  .cards {
-    width: 220px;
-    padding: 18px;
-  }
-
-  .motivos h2 {
-    font-size: 1.8rem;
-  }
-
-  .motivos li {
-    font-size: 1rem;
-    padding: 12px 18px;
+    gap: 30px 20px;
   }
 }
 
-@media (max-width: 768px) {
-  .servicoss {
-    padding: 30px 15px;
-  }
-
-  .servicoss h1 {
-    font-size: 1.8rem;
-  }
-
-  .cards {
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
+@media (max-width: 900px) {
   .grid-servicos {
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-
-  .motivos ul {
-    padding: 0 10px;
-  }
-
-  .motivos li {
-    font-size: 1rem;
-  }
-
-  .botao-whats {
-    width: 100%;
-    max-width: 300px;
-  }
 }
 
-@media (max-width: 480px) {
-  .servicoss h1 {
-    font-size: 1.5rem;
+@media (max-width: 600px) {
+  .grid-servicos {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
-
-  .cards img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .cards h2 {
-    font-size: 1.1rem;
-  }
-
-  .botao-whats {
-    font-size: 0.95rem;
-    padding: 10px 20px;
-  }
-
-  .motivos h2 {
-    font-size: 1.5rem;
-  }
-
-  .motivos li {
-    font-size: 0.95rem;
-    padding: 10px 14px;
+  
+  .cards {
+    min-height: 250px;
+    padding: 25px 20px;
   }
 }

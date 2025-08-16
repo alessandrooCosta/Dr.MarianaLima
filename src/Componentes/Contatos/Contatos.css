@@ -1,110 +1,90 @@
-:root {
-  --cor-fundo: #F9E9E0;
-  --cor-texto: #424E50;
-  --cor-botao: #B8CDBA;
-  --cor-hover: #F8BBBC;
-  --cor-card: #FAF8F6;
-}
 
 .contato {
-  padding: 40px 20px;
+  padding: 80px 20px;
+  
   text-align: center;
 }
 
 .contato h1 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 2.8rem;
+  color: #424E50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.contato h1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #B8CDBA;
+  border-radius: 2px;
 }
 
 .contato-container {
-  padding: 40px 50px;
-  max-width: 850px;
-  margin: auto;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .contato-opcoes {
   display: flex;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 160px;
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .cards {
+  background: white;
   border-radius: 16px;
-  padding: 30px 20px;
-  width: 200px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: background 0.3s;
+  padding: 40px 30px;
+  width: 220px;
+  transition: all 0.3s;
+  box-shadow: 0 8px 16px rgba(66, 78, 80, 0.1);
+  border-top: 4px solid #F8BBC3;
 }
 
 .cards:hover {
-  background-color: var(--cor-hover);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(248, 187, 195, 0.3);
 }
 
 .cards img {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.cards:hover img {
+  transform: scale(1.1);
 }
 
 .cards p {
-  font-size: 1rem;
-  margin: 0;
+  font-size: 1.2rem;
+  color: #424E50;
+  font-weight: 500;
 }
 
-@media (max-width: 1024px) {
-  .contato h1 {
-    font-size: 2rem;
-  }
-
-  .contato-container {
-    padding: 30px 30px;
-  }
-
-  .cards {
-    width: 180px;
-    padding: 25px 15px;
-  }
-
-  .contato-opcoes {
-    gap: 80px;
-  }
+.cards a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 768px) {
   .contato h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
-
-  .contato-container {
-    padding: 25px 20px;
-  }
-
-  .contato-opcoes {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-
+  
   .cards {
-    width: 90%;
-    max-width: 300px;
+    width: 160px;
+    padding: 30px 20px;
   }
-}
-
-@media (max-width: 480px) {
-  .contato h1 {
-    font-size: 1.5rem;
-  }
-
+  
   .cards img {
-    width: 40px;
-  }
-
-  .cards p {
-    font-size: 0.95rem;
+    width: 60px;
+    height: 60px;
   }
 }

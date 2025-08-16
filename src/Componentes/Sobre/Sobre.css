@@ -1,136 +1,180 @@
-/* Paleta */
-:root {
-  --cor-principal: #424E50;
-  --cor-fundo: #F9E9E0;
-  --cor-destaque: #F8BBBC;
-  --cor-verde: #B8CDBA;
-}
 
 .sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
   text-align: center;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
 }
 
 .sobre-container h1 {
-  font-size: 2.4rem;
-  color: var(--cor-principal);
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  color: #424E50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.sobre-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #B8CDBA;
+  border-radius: 2px;
 }
 
 .perfil {
-  background-color: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(66, 78, 80, 0.1);
+  border-top: 6px solid #B8CDBA;
+  transition: all 0.4s ease;
+}
+
+.perfil:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(248, 187, 195, 0.2);
 }
 
 .foto-perfil {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  border: 5px solid var(--cor-verde);
   object-fit: cover;
-  margin-bottom: 20px;
+  border: 6px solid #B8CDBA;
+  box-shadow: 0 10px 30px rgba(248, 187, 195, 0.3);
+  margin: 0 auto 30px;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.perfil:hover .foto-perfil {
+  transform: rotate(5deg) scale(1.05);
 }
 
 .perfil h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: #424E50;
   margin-bottom: 5px;
-  color: var(--cor-principal);
 }
 
 .crmv {
+  font-size: 1.1rem;
+  color: #424E50;
+  margin-bottom: 30px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 
 .descricao {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  line-height: 1.6;
+  text-align: left;
+  color: #424E50;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.descricao p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #424E50;
+  position: relative;
+  display: inline-block;
+}
+
+.descricao p:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #B8CDBA;
 }
 
 .icones-social {
   display: flex;
   justify-content: center;
   gap: 25px;
+  margin-top: 40px;
 }
 
 .icones-social a {
-  font-size: 1.5rem;
-  color: var(--cor-principal);
-  transition: color 0.3s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F9E9E0;
+  transition: all 0.3s ease;
 }
 
 .icones-social a:hover {
-  color: var(--cor-destaque);
+  background: #F8BBC3;
+  transform: translateY(-5px) scale(1.1);
 }
 
-@media (max-width: 480px) {
-  .sobre-container {
-    padding: 30px 15px;
-  }
+.icones-social img {
+  width: 25px;
+  height: 25px;
+}
 
-  .sobre-container h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-
+/* Responsivo */
+@media (max-width: 1024px) {
   .perfil {
-    padding: 20px 15px;
-  }
-
-  .foto-perfil {
-    width: 140px;
-    height: 140px;
-    border-width: 4px;
-    margin-bottom: 15px;
-  }
-
-  .perfil h2 {
-    font-size: 1.4rem;
-  }
-
-  .descricao {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
-  .icones-social a {
-    font-size: 1.3rem;
-    gap: 15px;
+    padding: 40px 30px;
   }
 }
 
-/* Para tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .sobre-container {
-    padding: 35px 20px;
+    padding: 60px 15px;
   }
-
+  
   .sobre-container h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
   }
-
+  
   .foto-perfil {
-    width: 160px;
-    height: 160px;
-    border-width: 4.5px;
+    width: 180px;
+    height: 180px;
   }
-
+  
   .perfil h2 {
     font-size: 1.6rem;
   }
+}
 
-  .descricao {
-    font-size: 1.05rem;
-    line-height: 1.5;
+@media (max-width: 480px) {
+  .perfil {
+    padding: 30px 20px;
   }
-
+  
+  .sobre-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .descricao {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
   .icones-social a {
-    font-size: 1.4rem;
-    gap: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icones-social img {
+    width: 20px;
+    height: 20px;
   }
 }

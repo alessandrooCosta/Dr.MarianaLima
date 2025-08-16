@@ -47,10 +47,10 @@ function PaginaServicos() {
             <div className="motivos">
                 <h2>Por que escolher o atendimento domiciliar?</h2>
                 <ul>
-                    <li>Menos estresse para o animal</li>
-                    <li>Conforto e segurança para o tutor</li>
+                    <li>Menos estresse para o seu pet</li>
+                    <li>Conforto e segurança para você e seu pet</li>
                     <li>Horários flexíveis</li>
-                    <li>Atendimento personalizado</li>
+                    <li>Atendimento personalizado e exclusivo</li>
                 </ul>
             </div>
 

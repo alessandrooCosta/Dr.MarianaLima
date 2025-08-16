@@ -4,8 +4,7 @@ function SobreInfo() {
   return (
     <div>
       <section className="sobre-container">
-        <h1>Sobre a Dra. Mariana Lima</h1>
-
+        <h1>Minha Jornada na Medicina Veterinária</h1>
         <div className="perfil">
           <img
             className="foto-perfil"

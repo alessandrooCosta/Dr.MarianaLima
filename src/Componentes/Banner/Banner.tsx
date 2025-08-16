@@ -6,7 +6,7 @@ function Banner() {
       <div className="hero-content">
         <div className="hero-texto">
           <div className="logo-container">
-            <img src="/imagens/fotos/logo_cabecalho.jpg" alt="Logo da Dra. Mariana Lima" className="logo-hero" />
+            <img src="/imagens/fotos/logo_banner2.jpg" alt="Logo da Dra. Mariana Lima" className="logo-hero" />
           </div>
           <h1>Olá, eu sou a Dra. Mariana Lima!</h1>
           <p>Atendimento veterinário domiciliar: mais do que uma consulta, uma experiência tranquila e carinhosa para o seu pet.</p>
@@ -15,7 +15,7 @@ function Banner() {
           </a>
         </div>
         <div className="hero-imagem">
-          <img src="\imagens\fotos\banner.jpg" alt="Dra. [Nome] com pet"></img>
+          <img src="\imagens\fotos\banner_principal.jpg" alt="Dra. [Nome] com pet"></img>
         </div>
       </div>
     </section>
