@@ -16,7 +16,9 @@ function Cabecalho() {
         </div>
       </Link>
       <div className={`nav ${menuAberto ? 'ativo' : ''}`}>
-        <Link to="/" onClick={() => setMenuAberto(false)}>Mariana Lima</Link>
+        <Link to="/" onClick={() => setMenuAberto(false)} className="nav-icon">
+          <img src="/imagens/icones/home.svg" alt="Home" />
+        </Link>
         <Link to="/sobre" onClick={() => setMenuAberto(false)}>Sobre</Link>
         <Link to="/servicos" onClick={() => setMenuAberto(false)}>Serviços</Link>
       </div>
