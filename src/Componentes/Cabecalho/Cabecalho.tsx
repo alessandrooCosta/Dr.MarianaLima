@@ -16,9 +16,10 @@ function Cabecalho() {
         </div>
       </Link>
       <div className={`nav ${menuAberto ? 'ativo' : ''}`}>
+        <Link to="/" onClick={() => setMenuAberto(false)}>Mariana Lima</Link>
         <Link to="/sobre" onClick={() => setMenuAberto(false)}>Sobre</Link>
         <Link to="/servicos" onClick={() => setMenuAberto(false)}>Serviços</Link>
-        <Link to="/contato" onClick={() => setMenuAberto(false)}>Contato</Link>
+        {/* <Link to="/contato" onClick={() => setMenuAberto(false)}>Contato</Link> */}
       </div>
       <div className="hamburguer" onClick={toggleMenu}>
         <span className="linha"></span>

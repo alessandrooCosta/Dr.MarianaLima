@@ -1,13 +1,22 @@
+:root {
+  --cor-rosa: #F8BBC3;
+  --cor-texto: #424E50;
+  --cor-fundo: #F9E9E0;
+  --cor-verde: #B8CDBA;
+  --cor-branco: #FFFFFF;
+  --sombra-card: 0 8px 16px rgba(66, 78, 80, 0.1);
+  --sombra-hover: 0 15px 30px rgba(248, 187, 195, 0.3);
+}
 
 .contato {
   padding: 80px 20px;
-  
   text-align: center;
+  background-color: var(--cor-fundo);
 }
 
 .contato h1 {
   font-size: 2.8rem;
-  color: #424E50;
+  color: var(--cor-texto);
   margin-bottom: 60px;
   position: relative;
 }
@@ -20,40 +29,47 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: #B8CDBA;
+  background: var(--cor-verde);
   border-radius: 2px;
 }
 
-.contato-container {
-  max-width: 1000px;
+.carousel-container {
+  position: relative;
+  max-width: 800px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.contato-opcoes {
+.carousel-track {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .cards {
-  background: white;
+  background: var(--cor-branco);
   border-radius: 16px;
-  padding: 40px 30px;
-  width: 220px;
+  padding: 50px 30px;
   transition: all 0.3s;
-  box-shadow: 0 8px 16px rgba(66, 78, 80, 0.1);
-  border-top: 4px solid #F8BBC3;
+  box-shadow: var(--sombra-card);
+  border-top: 4px solid var(--cor-rosa);
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .cards:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(248, 187, 195, 0.3);
+  box-shadow: var(--sombra-hover);
 }
 
 .cards img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
   transition: transform 0.3s;
 }
@@ -63,28 +79,119 @@
 }
 
 .cards p {
-  font-size: 1.2rem;
-  color: #424E50;
+  font-size: 1.3rem;
+  color: var(--cor-texto);
   font-weight: 500;
+  margin: 0;
 }
 
 .cards a {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--cor-branco);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--cor-verde);
+  color: var(--cor-branco);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--cor-verde);
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  opacity: 1;
+  transform: scale(1.2);
+  background: var(--cor-texto);
 }
 
 @media (max-width: 768px) {
   .contato h1 {
     font-size: 2.2rem;
+    margin-bottom: 40px;
   }
   
   .cards {
-    width: 160px;
-    padding: 30px 20px;
+    padding: 40px 20px;
+  }
+  
+  .cards img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contato {
+    padding: 60px 15px;
+  }
+  
+  .contato h1 {
+    font-size: 1.8rem;
+  }
+  
+  .cards {
+    padding: 30px 15px;
   }
   
   .cards img {
     width: 60px;
     height: 60px;
+  }
+  
+  .cards p {
+    font-size: 1.1rem;
+  }
+  
+  .carousel-dots {
+    margin-top: 20px;
   }
 }
