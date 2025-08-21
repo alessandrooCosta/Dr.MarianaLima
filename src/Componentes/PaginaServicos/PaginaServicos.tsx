@@ -9,17 +9,20 @@ function PaginaServicos() {
         {
             icon: "/imagens/icones/consulta.svg",
             title: "Consulta Clínica",
-            description: "Consultas no conforto da sua casa, com carinho e atenção individual para seu pet."
+            description: "Consultas no conforto da sua casa, com carinho e atenção individual para seu pet.",
+            alt: "Ícone de estetoscópio veterinário"
         },
         {
             icon: "/imagens/icones/vacina.svg",
             title: "Vacinação",
-            description: "Protocolos vacinais seguros e atualizados para o bem-estar do seu animal."
+            description: "Protocolos vacinais seguros e atualizados para o bem-estar do seu animal.",
+            alt: "Ícone de seringa com vacina"
         },
         {
             icon: "/imagens/icones/exames.svg",
             title: "Exames Laboratoriais",
-            description: "Coleta com agilidade e precisão para diagnósticos confiáveis."
+            description: "Coleta com agilidade e precisão para diagnósticos confiáveis.",
+            alt: "Ícone de laboratório e amostra de sangue"
         },
         {
             icon: "/imagens/icones/exame.svg",
@@ -29,12 +32,13 @@ function PaginaServicos() {
         {
             icon: "/imagens/icones/documentos.svg",
             title: "Documentação",
-            description: "Atestados de saúde e guias de trânsito para viagens com seu pet."
+            description: "ÍCone de pronto-socorro ou cruz médica"
         },
         {
             icon: "/imagens/icones/curativos.svg",
             title: "Curativos e Medicação",
-            description: "Aplicação de medicamentos e cuidados para recuperação rápida e segura."
+            description: "Aplicação de medicamentos e cuidados para recuperação rápida e segura.",
+            alt: "Ícone de pronto-socorro ou cruz médica"
         }
     ];
 
@@ -57,9 +61,9 @@ function PaginaServicos() {
     };
 
     return (
-        <section className="servicoss">
+        <section className="servicoss" aria-label="Página de serviços oferecidos pela Dra. Mariana Lima">
             <h1>Serviços oferecidos</h1>
-            <p>Cuidado especializado no conforto da sua casa.</p>
+            <p>Cuidado personalizado no conforto da sua casa.</p>
 
             {/* Carrossel de Serviços */}
             <div className="carousel-container">
@@ -68,9 +72,9 @@ function PaginaServicos() {
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                     onMouseEnter={() => setIsPaused(true)}
                     onMouseLeave={() => setIsPaused(false)}
-                >
+                    aria-label="Carrossel de serviços">
                     {services.map((service, index) => (
-                        <div key={index} className="carousel-slide">
+                        <div key={index} className="carousel-slide" aria-label={`Slide ${index + 1} de serviços`}>
                             <div className="cards">
                                 <img src={service.icon} alt={service.title} />
                                 <h2>{service.title}</h2>
@@ -80,14 +84,14 @@ function PaginaServicos() {
                     ))}
                 </div>
 
-                <button className="carousel-btn prev" onClick={prevSlide}>
+                <button className="carousel-btn prev" onClick={prevSlide} aria-label="Slide anterior">
                     &lt;
                 </button>
-                <button className="carousel-btn next" onClick={nextSlide}>
+                <button className="carousel-btn next" onClick={nextSlide} aria-label="Próximo slide">
                     &gt;
                 </button>
 
-                <div className="carousel-dots">
+                <div className="carousel-dots" aria-label="Indicadores de slide">
                     {services.map((_, index) => (
                         <button
                             key={index}
@@ -98,7 +102,7 @@ function PaginaServicos() {
                 </div>
             </div>
 
-            <div className="motivos">
+            <div className="motivos" aria-label="Motivos para escolher o atendimento domiciliar">
                 <h2>Por que escolher o atendimento domiciliar?</h2>
                 <ul>
                     <li>Menos estresse para o seu pet</li>
@@ -108,7 +112,7 @@ function PaginaServicos() {
                 </ul>
             </div>
 
-            <a className="botao-whats" href="https://wa.me/5561999999999" target="_blank" rel="noopener noreferrer">
+            <a className="botao-whats" href="https://wa.me/5561999999999" target="_blank" aria-label="Agendar consulta via WhatsApp" rel="noopener noreferrer">
                 Agendar pelo WhatsApp
             </a>
         </section>

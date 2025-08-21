@@ -12,13 +12,11 @@ header {
 }
 
 .logo {
-  width: 90px;
+  width: 100px;
   height: 90px;
   background-image: url('/imagens/fotos/logo.png');
   background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  border: 1px solid #F8BBC3;
+  background-position: center;;
   transition: all 0.3s ease;
 }
 

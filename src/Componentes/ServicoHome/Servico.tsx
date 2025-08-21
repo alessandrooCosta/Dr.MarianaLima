@@ -57,9 +57,9 @@ function Servico() {
   };
 
   return (
-    <section className="servicos">
+    <section className="servicos" aria-label="Serviços oferecidos pela Dra. Mariana Lima">
       <h2>Serviços</h2>
-      <div className="carousel-container">
+      <div className="carousel-container" aria-label="Carrossel de serviços">
         <div
           className="carousel-track"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -87,7 +87,7 @@ function Servico() {
           &gt;
         </button>
 
-        <div className="carousel-dots">
+        <div className="carousel-dots" aria-label="Indicadores de slide">
           {services.map((_, index) => (
             <button
               key={index}

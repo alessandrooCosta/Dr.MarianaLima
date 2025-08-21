@@ -30,7 +30,7 @@ function Rodape() {
         href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0"
         className="whatsapp-float"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer" aria-label="Contato via WhatsApp"
       >
         <img src="/imagens/icones/whatsapp.svg" alt="WhatsApp" />
       </a>
@@ -43,7 +43,7 @@ function Rodape() {
           ↑
         </button>
       )}
-      <footer>
+      <footer aria-label="Rodapé do site">
         © 2025 Dra. Mariana Lima | CRMV 5142-DF | Todos os direitos reservados.
       </footer>
     </>
