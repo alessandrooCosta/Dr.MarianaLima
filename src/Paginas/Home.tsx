@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import Banner from "../Componentes/Banner/Banner"
 import Informacao from "../Componentes/Informacao/Informacao"
 import Localizacao from "../Componentes/Localizacao/Localizacao"
