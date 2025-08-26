@@ -15,7 +15,7 @@ function Banner() {
           </a>
         </div>
         <div className="hero-imagem">
-          <img src="\imagens\fotos\banner_principal.jpg" alt="Dra. Mariana Lima, médica veterinária" loading="eager" width="600" height="400" ></img>
+          <img src="\imagens\fotos\banner_principal.jpg" alt="Dra. Mariana Lima, médica veterinária"  loading="eager" width={1200} height={800} ></img>
         </div>
       </div>
     </section>

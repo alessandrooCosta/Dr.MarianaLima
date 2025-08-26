@@ -37,8 +37,10 @@
 }
 
 .hero-imagem img {
-  max-width: 100%;
-  width: 450px;
+  width: 100%;
+  height: auto;
+  max-width: 600px; 
+  display: block;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
