@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Diretórios bloqueados
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap (ATUALIZE COM SUA URL REAL)
+Sitemap: https://dramarianalima.com/sitemap.xml
+Sitemap: https://dramarianalima.com/sitemap-index.xml
