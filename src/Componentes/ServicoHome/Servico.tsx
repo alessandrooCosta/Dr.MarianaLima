@@ -70,6 +70,7 @@ function Servico() {
             <div
               key={index}
               className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
+              aria-label="Indicadores de slide"
             >
               <div className="card">
                 <img src={service.icon} alt={service.title} />
@@ -80,10 +81,10 @@ function Servico() {
           ))}
         </div>
 
-        <button className="carousel-btn prev" onClick={prevSlide}>
+        <button className="carousel-btn prev" onClick={prevSlide} aria-label="Slide anterior">
           &lt;
         </button>
-        <button className="carousel-btn next" onClick={nextSlide}>
+        <button className="carousel-btn next" onClick={nextSlide}  aria-label="Próximo slide">
           &gt;
         </button>
 
