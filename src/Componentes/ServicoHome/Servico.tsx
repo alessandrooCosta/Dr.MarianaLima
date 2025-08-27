@@ -88,12 +88,13 @@ function Servico() {
           &gt;
         </button>
 
-        <div className="carousel-dots" aria-label="Indicadores de slide">
+        <div className="carousel-dots" aria-label="Navegação do carrossel">
           {services.map((_, index) => (
             <button
               key={index}
               className={`dot ${index === currentSlide ? 'active' : ''}`}
               onClick={() => setCurrentSlide(index)}
+              aria-label={`Ir para o slide ${index + 1}`}
             />
           ))}
         </div>

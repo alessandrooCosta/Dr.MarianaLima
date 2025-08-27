@@ -69,7 +69,7 @@
 }
 
 .btn-whatsapp {
-  background-color: #B8CDBA;
+  background-color: #25D366;
   color: #fff;
   padding: 15px 25px;
   border: none;
@@ -80,7 +80,7 @@
 }
 
 .btn-whatsapp:hover {
-  background-color: #57b57e;
+  background-color: #1DA851;
 }
 
 @media (max-width: 1024px) {
