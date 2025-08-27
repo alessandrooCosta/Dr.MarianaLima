@@ -12,6 +12,7 @@ function Localizacao() {
         referrerPolicy="no-referrer-when-downgrade"
         width="100%"
         height="500"
+        aria-label="Mapa da localização da Dra. Mariana Lima - Brasília, Distrito Federal"
       ></iframe>
       <p>Atendemos Distrito Federal e Entorno</p>
     </section>
