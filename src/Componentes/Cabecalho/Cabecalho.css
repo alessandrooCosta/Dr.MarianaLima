@@ -14,7 +14,7 @@ header {
 .logo {
   width: 100px;
   height: 90px;
-  background-image: url('/imagens/fotos/logo.png');
+  background-image: url('/imagens/fotos/logo.avif');
   background-size: cover;
   background-position: center;;
   transition: all 0.3s ease;

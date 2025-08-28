@@ -6,7 +6,7 @@ function Banner() {
       <div className="hero-content">
         <div className="hero-texto">
           <div className="logo-container">
-            <img src="/imagens/fotos/logo_banner2.jpg" alt="Dra. Mariana Lima - Médica Veterinária - Atendimento Domiciliar" className="logo-hero" />
+            <img src="/imagens/fotos/logo_banner2.avif" alt="Dra. Mariana Lima - Médica Veterinária - Atendimento Domiciliar" className="logo-hero" />
           </div>
           <h1>Olá, eu sou a Dra. Mariana Lima!</h1>
           <p>Atendimento veterinário domiciliar: mais do que uma consulta, uma experiência tranquila e carinhosa para o seu pet.</p>
