@@ -10,7 +10,6 @@ function Banner() {
               src="/imagens/fotos/logo_banner2.avif"
               alt="Dra. Mariana Lima - Médica Veterinária - Atendimento Domiciliar"
               decoding="async"
-              loading="lazy"
             />
           </div>
           <h1>Olá, eu sou a Dra. Mariana Lima!</h1>

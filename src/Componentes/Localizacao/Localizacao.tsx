@@ -55,7 +55,7 @@ function Localizacao() {
         />
       ) : (
         <img
-          src="/imagens/fotos/mapa-estatico-900.webp"
+          src=""
           alt="Mapa de Brasília (pré-visualização)"
           width={900} height={506}
           loading="lazy" decoding="async"

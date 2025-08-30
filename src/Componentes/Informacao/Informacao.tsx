@@ -3,7 +3,7 @@ import './Informacao.css'
 function Informacao() {
     return (
         <section className="informacao" aria-label="Informações sobre a Dra. Mariana Lima">
-            <img className="img" src="\imagens\fotos\img_info.avif" alt="Foto da Dra. Mariana Lima" />
+            <img className="img" src="\imagens\fotos\img_info2.avif" alt="Foto da Dra. Mariana Lima" />
             <div className="informacao-texto" aria-label="Texto informativo sobre a Dra. Mariana Lima">
                 <h2>Dra. Mariana Lima, CRMV 5142-DF</h2>
                 <p>Atua há mais de 4 anos na clínica médica de pequenos animais, com foco em cuidado, bem-estar e atenção individualizada.</p>
