@@ -111,33 +111,27 @@ function PaginaServicos() {
                     <li>Atendimento personalizado e exclusivo</li>
                 </ul>
             </div>
-
             <a
-                className="btn-whatsapp"
+                className="botao-whats"
                 aria-label="Agendar consulta via WhatsApp"
-                href="https://wa.me/message/UJ4EABH6GT2EG1"
+                href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
                 onClick={(e) => {
                     e.preventDefault();
+                    const phone = "5561991492264";
+                    const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
+                    const encoded = encodeURIComponent(text);
 
-                    // tenta abrir o app nativo
-                    window.location.href = "whatsapp://send?text=Olá%20Dra.%20Mariana";
+                    // tenta abrir o app (destinatário definido)
+                    window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
 
-                    // fallback pra versão web se o app não abrir
+                    // fallback: wa.me (abre web/app)
                     setTimeout(() => {
-                        window.location.href = "https://wa.me/message/UJ4EABH6GT2EG1";
-                    }, 1000);
+                        window.location.href = `https://wa.me/${phone}?text=${encoded}`;
+                    }, 900);
                 }}
             >
                 Agendar pelo WhatsApp
             </a>
-
-
-
-
-
-
-
-
         </section>
     );
 }
