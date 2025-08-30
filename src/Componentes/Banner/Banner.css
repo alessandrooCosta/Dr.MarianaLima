@@ -47,12 +47,12 @@
 
 .logo-container {
   text-align: center;         
-  margin-bottom: 30px; 
+  margin-bottom: 16px; 
 }
 
 .logo-hero {
   aspect-ratio: 1 / 1;
-  width: 160px;             /* Fiz mundaçnça estava 400px */
+  width: clamp(400px, 14vw, 400px); /* min 160px, cresce até 280px */
   height: auto;          
   border-radius: 50%;             
   border: 4px;  
@@ -122,6 +122,12 @@
     max-width: 300px;
     margin: 0 auto;
   }
+
+  .logo-hero {
+    width: 300px;
+  }
+
+
 }
 
 @media (max-width: 480px) {
@@ -139,13 +145,6 @@
 
   .hero-imagem img {
     max-width: 300px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .logo-hero {
-    width: 300px;
   }
 }
 

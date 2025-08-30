@@ -9,16 +9,20 @@ function Banner() {
             <img className="logo-hero"
               src="/imagens/fotos/logo_banner2.avif"
               alt="Dra. Mariana Lima - Médica Veterinária - Atendimento Domiciliar"
-              width={160}
-              height={160}
               decoding="async"
               loading="lazy"
             />
           </div>
           <h1>Olá, eu sou a Dra. Mariana Lima!</h1>
           <p>Atendimento veterinário domiciliar: mais do que uma consulta, uma experiência tranquila e carinhosa para o seu pet.</p>
-          <a href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0" target="_blank" aria-label="Agendar consulta via WhatsApp" rel="noreferrer">
-            <button className="btn-whatsapp" >Agendar pelo WhatsApp</button>
+          <a
+            href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Agendar consulta via WhatsApp"
+            className="btn-whatsapp"
+          >
+            Agendar pelo WhatsApp
           </a>
         </div>
         <div className="hero-imagem">
