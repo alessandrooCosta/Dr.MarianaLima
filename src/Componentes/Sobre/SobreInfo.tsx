@@ -22,7 +22,7 @@ function SobreInfo() {
           </p>
           <div className="icones-social" aria-label="Ícones de redes sociais">
             <a href="https://www.instagram.com/mbr.vet/" target="_blank"><img src="\imagens\icones\instagram.svg" alt="Ícone do Instagram"></img></a>
-            <a href="https://facebook.com" target="_blank"><img src="\imagens\icones\facebook.svg" alt="Ícone do Facebook"></img></a>
+            <a href="https://www.facebook.com/share/15x4RQgr2b/" target="_blank"><img src="\imagens\icones\facebook.svg" alt="Ícone do Facebook"></img></a>
             <a href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0" target="_blank"><img src="\imagens\icones\whatsapp1.svg" alt="Ícone do Whatsapp"></img></a>
           </div>
         </div>

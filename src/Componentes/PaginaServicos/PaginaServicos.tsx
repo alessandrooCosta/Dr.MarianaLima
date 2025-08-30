@@ -112,9 +112,32 @@ function PaginaServicos() {
                 </ul>
             </div>
 
-            <a className="botao-whats" href="https://wa.me/5561999999999" target="_blank" aria-label="Agendar consulta via WhatsApp" rel="noopener noreferrer">
+            <a
+                className="btn-whatsapp"
+                aria-label="Agendar consulta via WhatsApp"
+                href="https://wa.me/message/UJ4EABH6GT2EG1"
+                onClick={(e) => {
+                    e.preventDefault();
+
+                    // tenta abrir o app nativo
+                    window.location.href = "whatsapp://send?text=Olá%20Dra.%20Mariana";
+
+                    // fallback pra versão web se o app não abrir
+                    setTimeout(() => {
+                        window.location.href = "https://wa.me/message/UJ4EABH6GT2EG1";
+                    }, 1000);
+                }}
+            >
                 Agendar pelo WhatsApp
             </a>
+
+
+
+
+
+
+
+
         </section>
     );
 }
