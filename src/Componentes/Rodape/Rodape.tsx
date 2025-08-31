@@ -27,10 +27,20 @@ function Rodape() {
   return (
     <>
       <a
-        href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0"
+        href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
         className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer" aria-label="Contato via WhatsApp"
+        rel="noopener noreferrer"
+        aria-label="Contato via WhatsApp"
+        onClick={(e) => {
+          e.preventDefault();
+          const phone = "5561991492264";
+          const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
+          const encoded = encodeURIComponent(text);
+          window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
+          setTimeout(() => {
+            window.location.href = `https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0`;
+          }, 900);
+        }}
       >
         <img src="/imagens/icones/whatsapp.svg" alt="WhatsApp" />
       </a>

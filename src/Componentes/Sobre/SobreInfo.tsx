@@ -8,7 +8,7 @@ function SobreInfo() {
         <div className="perfil" aria-label="Perfil da Dra. Mariana Lima">
           <img
             className="foto-perfil"
-            src="\imagens\fotos\sobre.jpg"
+            src="\imagens\fotos\sobre.avif"
             alt="Minha trajetória na Medicina Veterinária"
           />
           <h2>Dra. Mariana Lima</h2>
@@ -23,7 +23,21 @@ function SobreInfo() {
           <div className="icones-social" aria-label="Ícones de redes sociais">
             <a href="https://www.instagram.com/mbr.vet/" target="_blank"><img src="\imagens\icones\instagram.svg" alt="Ícone do Instagram"></img></a>
             <a href="https://www.facebook.com/share/15x4RQgr2b/" target="_blank"><img src="\imagens\icones\facebook.svg" alt="Ícone do Facebook"></img></a>
-            <a href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0" target="_blank"><img src="\imagens\icones\whatsapp1.svg" alt="Ícone do Whatsapp"></img></a>
+            <a
+              href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
+              onClick={(e) => {
+                e.preventDefault();
+                const phone = "5561991492264";
+                const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
+                const encoded = encodeURIComponent(text);
+                window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
+                setTimeout(() => {
+                  window.location.href = `https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0`;
+                }, 900);
+              }}
+            >
+              <img src="\imagens\icones\whatsapp1.svg" alt="Ícone do Whatsapp"></img>
+            </a>
           </div>
         </div>
       </section>

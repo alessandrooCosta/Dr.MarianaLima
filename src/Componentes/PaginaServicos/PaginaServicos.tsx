@@ -120,13 +120,9 @@ function PaginaServicos() {
                     const phone = "5561991492264";
                     const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
                     const encoded = encodeURIComponent(text);
-
-                    // tenta abrir o app (destinatário definido)
                     window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
-
-                    // fallback: wa.me (abre web/app)
                     setTimeout(() => {
-                        window.location.href = `https://wa.me/${phone}?text=${encoded}`;
+                        window.location.href = `https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0`;
                     }, 900);
                 }}
             >

@@ -9,13 +9,14 @@
 }
 
 .img {
-  width: auto;
-  height: 300px; 
-  border-radius: 50%; 
+  max-width: 300px;   /* controla responsividade */
+  width: 100%;        /* preenche até 300px */
+  height: auto;       /* mantém proporção correta */
+  border-radius: 50%;
+  border: 1px;
   object-fit: cover; 
   display: block; 
-  border: 1px;
-  padding: 3px; 
+  padding: 3px;
 }
   
 .icones-social {
