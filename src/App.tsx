@@ -7,6 +7,8 @@ import Rodape from './Componentes/Rodape/Rodape'
 const Home = lazy(() => import('./Paginas/Home'))
 const Sobre = lazy(() => import('./Paginas/Sobre'))
 const Servicos = lazy(() => import('./Paginas/Servicos'))
+const ComoFunciona = lazy(() => import('./Paginas/ComoFunciona'))
+const Depoimentos = lazy(() => import('./Paginas/Depoimentos'))
 
 function PageFallback() {
   return (
@@ -25,6 +27,8 @@ function PrefetchOnIdle() {
     const run = () => {
       import('./Paginas/Sobre')
       import('./Paginas/Servicos')
+      import('./Paginas/ComoFunciona')
+      import('./Paginas/Depoimentos')
     }
     const ric: any = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 200))
     const id = ric(run)
@@ -54,6 +58,8 @@ export default function App() {
             />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/servicos" element={<Servicos />} />
+            <Route path="/depoimentos" element={<Depoimentos />} />
+            <Route path="/comofunciona" element={<ComoFunciona />} />
           </Routes>
         </Suspense>
         <Rodape />

@@ -1,0 +1,60 @@
+:root {
+  --cor-verde: #B8CDBA;
+  --cor-texto: #424E50;
+  --cor-rosa: #F8BBC3;
+  --cor-branco: #FFFFFF;
+  --sombra-card: 0 8px 24px rgba(66, 78, 80, 0.08);
+}
+
+.depoimentos {
+  background: #F9E9E0;
+  padding: 4rem 1.25rem;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  color: var(--cor-texto);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.depo-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.depo-card {
+  background: var(--cor-branco);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: var(--sombra-card);
+  text-align: left;
+}
+
+.depo-card blockquote { margin: 0; }
+.depo-card p { color: var(--cor-texto); line-height: 1.6; }
+
+.depo-card footer {
+  margin-top: 0.75rem;
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+}
+
+.depo-cta {
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+/* responsivo */
+@media (max-width: 992px) {
+  .depo-lista { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .depo-lista { grid-template-columns: 1fr; }
+}

@@ -2,6 +2,9 @@ import { Helmet } from "react-helmet";
 import Banner from "../Componentes/Banner/Banner"
 import Informacao from "../Componentes/Informacao/Informacao"
 import Localizacao from "../Componentes/Localizacao/Localizacao"
+import Depoimentos from '../Componentes/Depoimentos/Depoimentos'
+import ComoFunciona from '../Componentes/ComoFunciona/ComoFunciona'
+
 import Servico from "../Componentes/ServicoHome/Servico"
 
 function Home() {
@@ -21,7 +24,9 @@ function Home() {
             </Helmet>
             <Banner />
             <Informacao />
+            <ComoFunciona />
             <Servico />
+            <Depoimentos />
             <Localizacao />
         </div>
     )

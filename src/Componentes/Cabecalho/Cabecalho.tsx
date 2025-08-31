@@ -98,6 +98,12 @@ export default function Cabecalho() {
           <li>
             <Link to="/servicos" onClick={fecharMenu}>Serviços</Link>
           </li>
+          <li>
+            <Link to="/comofunciona" onClick={fecharMenu}>Como Funciona</Link>
+          </li>
+          <li>
+            <Link to="/depoimentos" onClick={fecharMenu}>Depoimentos</Link>
+          </li>
         </ul>
       </nav>
     </header>
