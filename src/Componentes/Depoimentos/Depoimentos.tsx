@@ -45,8 +45,18 @@ function Depoimentos() {
             </ul>
             <a
                 className="btn-whatsapp depo-cta"
-                href="https://wa.me/message/UJ4EABH6GT2EG1"
                 aria-label="Agendar consulta via WhatsApp"
+                href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                onClick={(e) => {
+                    e.preventDefault();
+                    const phone = "5561991492264";
+                    const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
+                    const encoded = encodeURIComponent(text);
+                    window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
+                    setTimeout(() => {
+                        window.location.href = `https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0`;
+                    }, 900);
+                }}
             >
                 Agendar pelo WhatsApp
             </a>
