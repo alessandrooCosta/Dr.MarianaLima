@@ -15,11 +15,19 @@ function Banner() {
           <h1>Olá, eu sou a Dra. Mariana Lima!</h1>
           <p>Atendimento veterinário domiciliar: mais do que uma consulta, uma experiência tranquila e carinhosa para o seu pet.</p>
           <a
-            href="https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Agendar consulta via WhatsApp"
-            className="btn-whatsapp"
+          className="btn-whatsapp"
+          aria-label="Agendar consulta via WhatsApp"
+                href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                onClick={(e) => {
+                    e.preventDefault();
+                    const phone = "5561991492264";
+                    const text = "Olá Dra. Mariana, gostaria de agendar uma consulta.";
+                    const encoded = encodeURIComponent(text);
+                    window.location.href = `whatsapp://send?phone=${phone}&text=${encoded}`;
+                    setTimeout(() => {
+                        window.location.href = `https://api.whatsapp.com/message/UJ4EABH6GT2EG1?autoload=1&app_absent=0`;
+                    }, 900);
+                }}
           >
             Agendar pelo WhatsApp
           </a>

@@ -12,7 +12,7 @@ const passos = [
         titulo: '2. Vamos até você',
         texto:
             'Consulta no conforto da sua casa. Menos estresse e mais bem-estar.',
-        icone: '/imagens/icones/consulta.svg',
+        icone: '/imagens/icones/maps.svg',
         alt: 'Ícone de consulta',
     },
     {
