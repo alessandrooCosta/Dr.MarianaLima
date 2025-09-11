@@ -4,21 +4,21 @@ const passos = [
     {
         titulo: '1. Agende pelo WhatsApp',
         texto:
-            'Conte o que seu pet precisa. Enviamos valores e orientações rápidas.',
+            'Fale conosco pelo WhatsApp sobre as necessidades do seu pet. Enviamos valores e orientações de forma rápida e atenciosa.',
         icone: '/imagens/icones/whatsapp_comoFunciona.svg',
         alt: 'Ícone WhatsApp',
     },
     {
         titulo: '2. Vamos até você',
         texto:
-            'Consulta no conforto da sua casa. Menos estresse e mais bem-estar.',
+            'Consulta no conforto da sua casa: menos estresse, mais bem-estar para o seu pet.',
         icone: '/imagens/icones/maps.svg',
         alt: 'Ícone de consulta',
     },
     {
         titulo: '3. Orientações e acompanhamento',
         texto:
-            'Você recebe recomendações e, se necessário, receitas e retorno.',
+            'Você recebe acompanhamento durante todo o tratamento do seu pet pelo WhatsApp, além de receitas e retorno, se necessário',
         icone: '/imagens/icones/acompanhamento.svg',
         alt: 'Ícone de documentos',
     },
@@ -58,7 +58,7 @@ export default function ComoFunciona() {
             >
                 Agendar consulta
             </a>
-            <p className="microcopy">Atendimento seg–sáb, 09h–19h. Respondemos em ~15 min.</p>
+            <p className="microcopy">Atendimento seg–sáb, 09h–18h. Resposta em até 1h.</p>
         </section>
     )
 }
