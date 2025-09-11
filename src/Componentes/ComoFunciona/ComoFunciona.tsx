@@ -5,7 +5,7 @@ const passos = [
         titulo: '1. Agende pelo WhatsApp',
         texto:
             'Conte o que seu pet precisa. Enviamos valores e orientações rápidas.',
-        icone: '/imagens/icones/whatsapp1.svg',
+        icone: '/imagens/icones/whatsapp_comoFunciona.svg',
         alt: 'Ícone WhatsApp',
     },
     {
@@ -19,7 +19,7 @@ const passos = [
         titulo: '3. Orientações e acompanhamento',
         texto:
             'Você recebe recomendações e, se necessário, receitas e retorno.',
-        icone: '/imagens/icones/documentos.svg',
+        icone: '/imagens/icones/acompanhamento.svg',
         alt: 'Ícone de documentos',
     },
 ]
