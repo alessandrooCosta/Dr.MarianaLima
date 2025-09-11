@@ -74,4 +74,5 @@
 }
 @media (max-width: 640px) {
   .passos { grid-template-columns: 1fr; }
+  .passo-cta{ margin-top: 1.80rem; }
 }
