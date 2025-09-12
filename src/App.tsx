@@ -41,7 +41,7 @@ function PrefetchOnIdle() {
   return null
 }
 
-const GA_MEASUREMENT_ID = "G-9F9Y04YCB2"; 
+const GA_MEASUREMENT_ID = "G-DS3ZNRRHYC"; 
 ReactGA.initialize(GA_MEASUREMENT_ID);
 
 function SendPageView() {
