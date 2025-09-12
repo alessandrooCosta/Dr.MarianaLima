@@ -1,8 +1,9 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { Suspense, lazy, useEffect } from 'react'
 import Cabecalho from './Componentes/Cabecalho/Cabecalho'
 import Rodape from './Componentes/Rodape/Rodape'
+import ReactGA from "react-ga4";
 
 const Home = lazy(() => import('./Paginas/Home'))
 const Sobre = lazy(() => import('./Paginas/Sobre'))
@@ -40,10 +41,26 @@ function PrefetchOnIdle() {
   return null
 }
 
+const GA_MEASUREMENT_ID = "G-9F9Y04YCB2"; 
+ReactGA.initialize(GA_MEASUREMENT_ID);
+
+function SendPageView() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
+  return null;
+}
+
+
 export default function App() {
+
   return (
     <div>
       <BrowserRouter>
+        <SendPageView />
         <Cabecalho />
         <Suspense fallback={<PageFallback />}>
           <Routes>
