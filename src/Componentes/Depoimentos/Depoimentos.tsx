@@ -8,22 +8,19 @@ type Depoimento = {
 
 const depoimentos: Depoimento[] = [
     {
-        nome: 'Carla S.',
-        bairro: 'Águas Claras',
-        texto:
-            'A Dra. Mariana foi muito atenciosa com minha gatinha. Atendimento em casa deixou tudo mais tranquilo!',
+        nome: 'Emanuelle - Luppy',
+        bairro: 'Planaltina',
+        texto: 'Você é muito atenciosa ❤️ não tenho palavras pra lhe agradecer pela sua atenção com meu Luppy. ❤️',
     },
     {
-        nome: 'Rafael M.',
-        bairro: 'Asa Sul',
-        texto:
-            'Chegou no horário, explicou tudo com calma e já aplicou as vacinas. Recomendo demais!',
+        nome: 'Beatriz - Romeu',
+        bairro: 'Planaltina',
+        texto: 'Boa noite Doutora Mariana, passando para agradecer de coração pelo cuidado, atenção e carinho que vc teve e tem pelo nosso Romeu, sempre muito prestativa durante o tratamento da dermatite atópica do Romeu! Ver ele melhorando a cada dia e tendo uma vida mais confortável tem sido um alívio pra mim, aliás para a nossa família, e sei que isso só foi possível graças à sua dedicação, cuidado, interesse e profissionalismo... O nosso muito obrigada por tudo ❤️ Gratidão 🙏 Você é demais! Você é uma excelente Profissional, Grata. 🙏 ❤️😘',
     },
     {
-        nome: 'Juliana P.',
-        bairro: 'Guará',
-        texto:
-            'Meu cão é idoso e ficou super calmo durante a consulta. Excelente profissional!',
+        nome: 'Cleide - Luppy',
+        bairro: 'Planaltina',
+        texto: 'Dra Mariana, quão grata sou a Deus, por te encontrar no nosso caminho, obrigada por todo respeito e carinho comigo com nosso Luppyinho, ali estava uma família desesperada, vc nos acolheu, obrigada! Que Deus te abençoe.',
     },
 ]
 
@@ -38,7 +35,7 @@ function Depoimentos() {
                             <p>“{d.texto}”</p>
                         </blockquote>
                         <footer>
-                            <strong>{d.nome}</strong> <span>• {d.bairro}</span>
+                            <strong>{d.nome} <span>• {d.bairro}</span></strong>
                         </footer>
                     </li>
                 ))}
