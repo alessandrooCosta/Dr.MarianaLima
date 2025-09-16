@@ -6,4 +6,4 @@ Disallow: /private/
 Disallow: /admin/
 
 # Sitemap (ATUALIZE COM SUA URL REAL)
-Sitemap: https://drmarianalima.netlify.app/sitemap.xml
+Sitemap: https://vetmarianalima.com/sitemap.xml
