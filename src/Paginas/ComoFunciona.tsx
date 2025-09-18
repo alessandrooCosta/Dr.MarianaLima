@@ -15,6 +15,7 @@ function Como() {
                 <meta name="geo.placename" content="Brasília" />
                 <meta name="geo.position" content="-15.7942;-47.8822" />
                 <meta name="ICBM" content="-15.7942, -47.8822" />
+                <link rel="canonical" href="https://vetmarianalima.com/comofunciona" />
             </Helmet>
             <ComoFunciona />
         </div>

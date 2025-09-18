@@ -1,0 +1,30 @@
+# Ativar mecanismo de reescrita
+RewriteEngine On
+
+# Evitar reescrita de arquivos importantes (sitemap, robots e verificação do Google)
+RewriteCond %{REQUEST_URI} ^/sitemap\.xml$ [OR]
+RewriteCond %{REQUEST_URI} ^/robots\.txt$ [OR]
+RewriteCond %{REQUEST_URI} ^/google[0-9A-Za-z]+\.html$
+RewriteRule ^ - [L]
+
+# Redirecionar tudo para index.html para permitir SPA funcionar
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Cache para melhorar performance (opcional)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/avif "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/jpg "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+</IfModule>
+
+# Cache curto para sitemap e robots
+<FilesMatch "sitemap\.xml|robots\.txt">
+  Header set Cache-Control "public, max-age=300"
+</FilesMatch>
