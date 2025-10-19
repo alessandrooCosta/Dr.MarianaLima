@@ -26,6 +26,16 @@ function Rodape() {
 
   return (
     <>
+
+      <a
+        href="https://www.instagram.com/mbr.vet/"
+        className="instagram-float"
+        rel="noopener noreferrer"
+        aria-label="Contato via WhatsApp"
+      >
+        <img src="/imagens/icones/instagram_contatos.svg" alt="WhatsApp" />
+      </a>
+
       <a
         href="https://wa.me/5561XXXXXXXX?text=Ol%C3%A1%20Dra.%20Mariana%2C%20gostaria%20de%20agendar%20uma%20consulta."
         className="whatsapp-float"
@@ -44,6 +54,7 @@ function Rodape() {
       >
         <img src="/imagens/icones/whatsapp.svg" alt="WhatsApp" />
       </a>
+
       {showScrollButton && (
         <button
           className="scroll-to-top"
@@ -53,6 +64,7 @@ function Rodape() {
           ↑
         </button>
       )}
+
       <footer aria-label="Rodapé do site">
         © 2025 Dra. Mariana Lima | CRMV 5142-DF | Todos os direitos reservados.
       </footer>
