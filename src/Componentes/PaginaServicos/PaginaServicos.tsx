@@ -27,12 +27,14 @@ function PaginaServicos() {
         {
             icon: "/imagens/icones/exame.svg",
             title: "Exames de Imagem",
-            description: "Parceria com clínicas de Raio-X e Ultrassonografia para exames detalhados."
+            description: "Parceria com clínicas de Raio-X e Ultrassonografia para exames detalhados.",
+            alt: "Ícone de Raio-X"
         },
         {
             icon: "/imagens/icones/documentos.svg",
             title: "Documentação",
-            description: "ÍCone de pronto-socorro ou cruz médica"
+            description: "Emissão de atestados de saúde e guias de trânsito para que seu pet possa viajar com segurança e tranquilidade.",
+            alt: "Ícone de documentação"
         },
         {
             icon: "/imagens/icones/curativos.svg",
